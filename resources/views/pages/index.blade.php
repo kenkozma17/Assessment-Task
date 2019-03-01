@@ -181,7 +181,11 @@
 <table id="data" class="table table-striped table-bordered" style="width:100%">
     <div class="form-group row">
         <div class="col-lg-4">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#AddBillModal">Add Bill</button>
+            @if(count($companies) > 0)
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#AddBillModal">Add Bill</button>
+            @else 
+                <button type="button" class="btn btn-info btn-lg" onClick="alert('There are no companies available to add a bill to. Please Add a Company first.')">Add Bill</button>
+            @endif
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#AddCompanyModal">Add Company</button>
         </div>
     </div> 

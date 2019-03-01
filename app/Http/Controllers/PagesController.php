@@ -17,7 +17,6 @@ class PagesController extends Controller
 
         // Fetches all bills from DB and sends to index view
         $bills = Bill::all();
-
         $companyBills = DB::table('companies')->join('bills', 'bills.companyID', '=', 'companies.id')->get();
 
         return view('pages.index', compact('companies', 'bills', 'companyBills'));
