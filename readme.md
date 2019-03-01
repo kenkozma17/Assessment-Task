@@ -1,5 +1,5 @@
 # CRUD Web Application (Company Billing)
-A simple CRUD Web Application which serves as an assessment task for Innoscripta.
+A simple CRUD Web Application which serves as an assessment task.
 
 # Installation and Usage
 
