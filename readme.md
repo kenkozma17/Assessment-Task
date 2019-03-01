@@ -29,12 +29,12 @@ php artisan key:generate
 
 7. In the .env file, add your database configuration.
 
-8. Run database migrations
+8. Run database migrations.
 ```
 php artisan migrate
 ```
 
-9. Run the server
+9. Run the server.
 ```
 php artisan serve
 ```
